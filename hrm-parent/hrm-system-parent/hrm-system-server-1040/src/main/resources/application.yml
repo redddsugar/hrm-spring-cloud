@@ -1,0 +1,21 @@
+server:
+  port: 1040
+spring:
+  application:
+    name: hrm-system
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql:///hrm-system?serverTimezone=Asia/Shanghai&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1010/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: system-server:1040  #指定客户端实例的ID
+mybatis-plus: #集成MyBatis-Plus
+  mapper-locations: classpath:com/itsource/mapper/*Mapper.xml
+  #type-aliases-package: cn.itsource.hrm.domain,cn.itsource.hrm.query

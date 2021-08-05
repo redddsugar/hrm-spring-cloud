@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:1030    #zuul要从配置中心拉取文件你要拉取具体的哪个配置文件
+      name: application-zuul #配置文件名字 dev是环境
+      profile: dev #环境 组成完整的文件名：application-zuul-dev.yml
+      label: master #主分支 or main

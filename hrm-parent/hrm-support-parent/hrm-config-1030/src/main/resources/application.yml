@@ -1,0 +1,23 @@
+server:
+  port: 1030
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1010/eureka/
+  instance:
+    prefer-ip-address: true # 以自己的ip 作为注册访问地址
+    instance-id: config-server #在仪表盘显示自己的服务标识
+
+
+spring:
+  application:
+    name: config-1030
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/redddsugar/hrm-config-server.git
+          username: 1741056830@qq.com
+          password: github1741056830
