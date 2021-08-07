@@ -31,7 +31,7 @@ public class SwaggerConfig {
         return new ApiInfoBuilder()
                 .title("源码人力资源系统")
                 .description("源码人力资源接口文档说明")
-                .termsOfServiceUrl("http://localhost:5010")
+                .termsOfServiceUrl("http://localhost:1020")
                 .contact(new Contact("Liu-Nan", "", "great@Email.com"))
                 .version("1.0")
                 .build();

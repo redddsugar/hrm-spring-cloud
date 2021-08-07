@@ -16,6 +16,6 @@ eureka:
   instance:
     prefer-ip-address: true
     instance-id: system-server:1040  #指定客户端实例的ID
-mybatis-plus: #集成MyBatis-Plus
+mybatis-plus:
   mapper-locations: classpath:com/itsource/mapper/*Mapper.xml
   #type-aliases-package: cn.itsource.hrm.domain,cn.itsource.hrm.query

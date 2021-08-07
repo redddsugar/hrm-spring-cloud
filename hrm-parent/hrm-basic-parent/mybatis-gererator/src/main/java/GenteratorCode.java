@@ -42,7 +42,7 @@ gc.setAuthor(rb.getString("author"));
         strategy.setNaming(NamingStrategy.underline_to_camel);// 表名生成策略
 
         strategy.setInclude(new String[]{
-                "t_systemdictionary","t_systemdictionaryitem"
+                "t_department","t_employee","t_meal","t_menu","t_permission","t_role","t_tenant","t_tenant_type"
         }); // 需要生成的表
 
         mpg.setStrategy(strategy);

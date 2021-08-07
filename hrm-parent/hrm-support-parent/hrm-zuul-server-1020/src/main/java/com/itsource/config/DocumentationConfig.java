@@ -14,7 +14,7 @@ public class DocumentationConfig implements SwaggerResourcesProvider {
     @Override
     public List<SwaggerResource> get() {
        List resources = new ArrayList<>();
-       resources.add(swaggerResource("系统管理", "/hrm/hrmSystem/v2/api-docs", "2.0"));
+       resources.add(swaggerResource("系统管理", "/hrm/system/v2/api-docs", "2.0"));
        return resources;
     }
 
