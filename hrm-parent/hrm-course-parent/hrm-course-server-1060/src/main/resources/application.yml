@@ -1,0 +1,21 @@
+server:
+  port: 1060
+spring:
+  application:
+    name: hrm-course
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql:///hrm-course?serverTimezone=Asia/Shanghai&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1010/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: course-server:1060  #指定客户端实例的ID
+mybatis-plus:
+  mapper-locations: classpath:com/itsource/mapper/*Mapper.xml
+  #type-aliases-package: cn.itsource.hrm.domain,cn.itsource.hrm.query

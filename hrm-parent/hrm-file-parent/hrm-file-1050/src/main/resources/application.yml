@@ -1,0 +1,21 @@
+server:
+  port: 1050
+spring:
+  application:
+    name: hrm-file
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1010/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: file-server:1050  #指定客户端实例的ID
+
+
+###########################################自定义##################################################
+file:
+  alicloud:
+    bucket-name: hrm-ln
+    access-key: LTAI4GA3K3kXxxCuHx6ejizP
+    secret-key: GHCxzwaReZGNERYtiNssX06yfst1OI
+    endpoint: oss-cn-hangzhou.aliyuncs.com

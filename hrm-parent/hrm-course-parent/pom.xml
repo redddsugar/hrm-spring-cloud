@@ -9,17 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>hrm-basic-parent</artifactId>
+    <artifactId>hrm-course-parent</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>hrm-basic-util</module>
-        <module>mybatis-gererator</module>
-        <module>hrm-basic-server</module>
+        <module>hrm-course-common</module>
+        <module>hrm-course-server-1060</module>
     </modules>
 
-    <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
-    </properties>
 
 </project>

@@ -9,12 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>hrm-basic-parent</artifactId>
+    <artifactId>hrm-file-parent</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>hrm-basic-util</module>
-        <module>mybatis-gererator</module>
-        <module>hrm-basic-server</module>
+        <module>hrm-file-1050</module>
     </modules>
 
     <properties>
