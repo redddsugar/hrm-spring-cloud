@@ -16,6 +16,6 @@ eureka:
 file:
   alicloud:
     bucket-name: hrm-ln
-    access-key: LTAI4GA3K3kXxxCuHx6ejizP
-    secret-key: GHCxzwaReZGNERYtiNssX06yfst1OI
+    access-key: 
+    secret-key: 
     endpoint: oss-cn-hangzhou.aliyuncs.com
